@@ -159,3 +159,6 @@ export function searchProducts(query: string): Product[] {
       p.tags.some((t) => t.toLowerCase().includes(q))
   )
 }
+export function getAllProducts(): Product[] {
+  return products
+}
